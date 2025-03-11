@@ -1,0 +1,1 @@
+docker run -itd --rm -v C:\Users\phx10\code\pybind11\workspace:/workspace pybind11-dev-env
