@@ -11,7 +11,7 @@ find_package(pybind11 REQUIRED)
 find_package(OpenMP REQUIRED)
 
 # 添加可执行文件
-pybind11_add_module(example main.cpp)
+pybind11_add_module(example main.cpp compute.cpp sum.cpp person.h person.cpp)
 
 # 添加 OpenMP 支持
 target_link_libraries(example PRIVATE OpenMP::OpenMP_CXX)
